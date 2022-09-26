@@ -25,13 +25,14 @@ app.get('/download/:id', async (req, res) => {
 	// const filename = `${data.videoDetails.title.replaceAll(' ', '')}.mp3`;
 	const filename = 'hello.mp4';
 	// const stream = ytdl(userUrl, { filter: 'audioonly' }).pipe(fs.createWriteStream(filename));
-	const stream = ytdl(userUrl, {
-		requestOptions: {
-			headers: {
-				cookie: COOKIE,
-			},
-		},
-	}).pipe(fs.createWriteStream(filename));
+	const stream = ytdl(userUrl).pipe(fs.createWriteStream(filename));
+	// const stream = ytdl(userUrl, {
+	// 	requestOptions: {
+	// 		headers: {
+	// 			cookie: COOKIE,
+	// 		},
+	// 	},
+	// }).pipe(fs.createWriteStream(filename));
 	stream.on('finish', () => {
 		res.download(filename);
 	});
