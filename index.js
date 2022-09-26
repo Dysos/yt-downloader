@@ -19,8 +19,9 @@ app.get('/download/:id', async (req, res) => {
 	// const data = await ytdl.getInfo(userUrl);
 	// console.log('data is ', data);
 	// const filename = `${data.videoDetails.title.replaceAll(' ', '')}.mp3`;
-	const filename = 'hello.mp3';
-	const stream = ytdl(userUrl, { filter: 'audioonly' }).pipe(fs.createWriteStream(filename));
+	const filename = 'hello.mp4';
+	// const stream = ytdl(userUrl, { filter: 'audioonly' }).pipe(fs.createWriteStream(filename));
+	const stream = ytdl(userUrl).pipe(fs.createWriteStream(filename));
 	stream.on('finish', () => {
 		res.download(filename);
 	});
