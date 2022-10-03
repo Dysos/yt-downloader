@@ -15,5 +15,8 @@
 		"ffmpeg": "^0.0.4",
 		"sass": "^1.55.0",
 		"ytdl-core": "^4.11.2"
+	},
+	"devDependencies": {
+		"node-sass": "^7.0.3"
 	}
 }
