@@ -6,9 +6,7 @@ const port = process.env.PORT || 4000;
 const app = express();
 app.use(express.json());
 app.set('view engine', 'ejs');
-
-// const COOKIE =
-// 	'CONSENT=PENDING+135; PREF=f4=4000000&tz=Europe.Copenhagen; SOCS=CAISEwgDEgk0Njg1MDc4MDQaAmVuIAEaBgiA64WYBg; VISITOR_INFO1_LIVE=Xsq4HoovZEk; __Secure-3PSID=Ogh_U_4Wj5tlYpB-RdayyMVgXpbrcw_snNN5HQ03uJgFk1lExV6cZKFWBSdVuAAxcwO_Aw.; __Secure-3PAPISID=HBOEcKLa7q6rBzC9/Aw4-mX1TkBmQ7kfuA; LOGIN_INFO=AFmmF2swRQIgSuhPcwwGXqyVBsPO4ivY4khj7QXksMtUxtZtBwrO89gCIQCqKqc5XWuovEGH6cO1bqXa2a0y7EZqBTT9J7P1lARd3g:QUQ3MjNmeEZUUVg4bzI5X0FBc3pVWklwYU5TX0NlQ0NxZi1XakhWcW5sdWRKUndUa0hOTjhFZjgyTDJxdkpPXzU3cFVGLWVkeERNaHlncFlvazF5NWo4M0syejBaMERaRl9LZjFSMExkZGFmNXdFYmtHN0NIYW9GR3hJQTZOUloxOFljT05idTd2TlJWZk55c1AtQlZEd3Mwc25RdnpWTm1n; YSC=hUgCsngbLw8; __Secure-3PSIDCC=AEf-XMRl8LjdlwoCEO2gTaqUZKuAC3WVkG52Yt9RTwD_7tlk8m5zOjcL-hWlQ6ARDODOVgUCFw';
+app.use('/public', express.static('public'));
 
 app.get('/', (req, res) => {
 	res.render('index');

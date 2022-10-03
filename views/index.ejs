@@ -7,103 +7,8 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Gloria+Hallelujah&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="/public/assets/css/style.css" />
 		<title>YouTube MP3 Downloader</title>
-		<style>
-			* {
-				padding: 0;
-				margin: 0;
-				box-sizing: border-box;
-			}
-			body {
-			}
-			.container {
-				width: 100vw;
-				height: 100vh;
-				/* background-color: #4158d0;
-				background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%); */
-				background-color: #ff3cac;
-				background-image: linear-gradient(225deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%);
-
-				display: flex;
-				flex-direction: column;
-				position: relative;
-			}
-
-			.heading-primary {
-				font-family: 'Gloria Hallelujah', cursive;
-				font-size: 100px;
-				color: #fcc419;
-				text-align: center;
-				line-height: 1;
-				padding-top: 60px;
-				text-transform: uppercase;
-				letter-spacing: 3px;
-			}
-
-			.button-container {
-				margin: 0 auto;
-				margin-top: 40px;
-				display: flex;
-				justify-content: center;
-				width: 100%;
-			}
-
-			.text__input,
-			text__input:focus-visible {
-				padding: 20px;
-				border-radius: 20px;
-				border-top-right-radius: 0;
-				border-bottom-right-radius: 0;
-				font-size: 20px;
-				font-family: 'Lato', sans-serif;
-				width: 40%;
-				border: none;
-				outline-width: 0;
-				text-align: center;
-			}
-
-			.download__button {
-				background-image: none;
-				border: none;
-				font-family: 'Gloria Hallelujah', cursive;
-				text-transform: uppercase;
-				padding: 10px;
-				border-top-right-radius: 20px;
-				border-bottom-right-radius: 20px;
-				cursor: pointer;
-				background-color: #fcc419;
-				color: #fff;
-				font-weight: 700;
-				letter-spacing: 1px;
-				font-size: 16px;
-				transition: all 0.2s;
-			}
-
-			.download__button:active {
-				background-color: #fab005;
-			}
-
-			.footer {
-				position: absolute;
-				bottom: 10px;
-				left: 50%;
-				transform: translateX(-50%);
-				text-transform: uppercase;
-				font-family: 'Lato', sans-serif;
-				font-size: 12px;
-			}
-
-			.footer__link:link,
-			.footer__link:visited {
-				color: #fcc419;
-				text-decoration: none;
-			}
-
-			.footer__link:hover,
-			.footer__link:active {
-				text-decoration: underline;
-			}
-		</style>
 	</head>
 	<body>
 		<div class="container">
@@ -113,7 +18,7 @@
 				<button class="download__button">Download as MP3</button>
 			</div>
 			<div class="footer">
-				<p>Powered by <a href="https://www.npmjs.com/package/ytdl-core" class="footer__link" target="_blank">ytdl-core</a>. Absalom Software 2022</p>
+				<p>Powered by <a href="https://www.npmjs.com/package/ytdl-core" class="footer__link" target="_blank">ytdl-core</a></p>
 			</div>
 		</div>
 		<script>
