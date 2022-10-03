@@ -21,14 +21,6 @@
 				<p>Powered by <a href="https://www.npmjs.com/package/ytdl-core" class="footer__link" target="_blank">ytdl-core</a></p>
 			</div>
 		</div>
-		<script>
-			const dlButton = document.querySelector('.download__button');
-			const textInput = document.querySelector('.text__input');
-			dlButton.addEventListener('click', () => {
-				const encoded = encodeURIComponent(textInput.value);
-
-				location.href = `/download/${encoded}`;
-			});
-		</script>
+		<script src="/public/assets/js/app.js"></script>
 	</body>
 </html>
